@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Header = styled.header`
+export const Nav = styled.nav`
     background: #FFF;
     color: #333;
     padding: 10px 25px;
@@ -22,9 +22,24 @@ export const Container = styled.div`
     padding-bottom: 60px;
 
     color: #FFF;
+`;
+
+export const Header = styled.div`
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h1 {
         margin: 50px 0;
+    }
+
+    button {
+        padding: 10px 15px;
+        background-color: #fff;
+        color: #000;
+        border: none;
+        margin-top: 25px;
     }
 `;
 
