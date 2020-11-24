@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { motion } from 'framer-motion';
+
 import { Header, Container, CardGrid, Card } from './Elements';
 
 import logo from './assets/logo.svg';
@@ -15,7 +17,10 @@ function App() {
   const [value, setValue] = useState(0);
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}>
       <Header>
         <img src={logo} alt="Logo" />
       </Header>
@@ -40,7 +45,7 @@ function App() {
           </Card>
         </CardGrid>
       </Container>
-    </div>
+    </motion.div>
   );
 }
 
